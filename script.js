@@ -39,3 +39,18 @@ const teamMembers = [
 
 //prendo il contenitore dal dom//
 const teamContainer = document.getElementById('team-container');
+
+//ciclo sull'array//
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+
+  teamContainer.innerHTML += `
+    <div>
+      <img src="${member.img}" alt="${member.name}">
+      <h3>${member.name}</h3>
+      <p>${member.role}</p>
+      <p>${member.email}</p>
+    </div>
+  `;
+}
+
