@@ -49,6 +49,14 @@ h1 {
 .team-card:hover {
     transform: translateY(-5px);
 }
+/*immagini*/
+.team-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+}
 
 /*testi*/
 .team-card h3 {
