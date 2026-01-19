@@ -13,3 +13,16 @@ body {
     padding: 40px;
     text-align: center;
 }
+
+/*titoli*/
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: blue;
+}
