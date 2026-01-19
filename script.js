@@ -58,4 +58,10 @@ for (let i = 0; i < teamMembers.length; i++) {
 //prendo il form//
 const form = document.getElementById('add-member-form');
 
+//test: se funziona il form//
+form.addEventListener('submit', function (e){
+  e.preventDefault();
+  console.log('Form inviato');
+});
+
 
