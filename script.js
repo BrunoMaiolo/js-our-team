@@ -43,14 +43,15 @@ const teamContainer = document.getElementById('team-container');
 //ciclo sull'array//
 for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
-
+//struttura card team//
   teamContainer.innerHTML += `
-    <div>
-      <img src="${member.img}" alt="${member.name}">
-      <h3>${member.name}</h3>
-      <p>${member.role}</p>
-      <p>${member.email}</p>
-    </div>
-  `;
+  <div class="team-card">
+    <img src="${member.img}" alt="${member.name}">
+    <h3>${member.name}</h3>
+    <p class="role">${member.role}</p>
+    <p class="email">${member.email}</p>
+  </div>
+`;
+
 }
 
