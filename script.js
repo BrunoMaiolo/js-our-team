@@ -66,8 +66,27 @@ form.addEventListener('submit', function (e){
   const role = document.getElementById ('role').value;
   const email = document.getElementById ('email').value;
   const img = document.getElementById ('img').value;
+//aggiungo nuovo membro in pagina//
+  const newMember = {
+  name: name,
+  role: role,
+  email: email,
+  img: img
+};
 
-  console.log(name, role, email, img);
+teamMembers.push(newMember);
+
+teamContainer.innerHTML += `
+  <div class="team-card">
+    <img src="${newMember.img}" alt="${newMember.name}">
+    <h3>${newMember.name}</h3>
+    <p class="role">${newMember.role}</p>
+    <p class="email">${newMember.email}</p>
+  </div>
+`;
+
+form.reset();
+
 });
 
 
