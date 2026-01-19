@@ -36,3 +36,6 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//prendo il contenitore dal dom//
+const teamContainer = document.getElementById('team-container');
